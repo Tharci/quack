@@ -1,0 +1,1 @@
+wscript.exe "C:\Documents\Scripts\invisible.vbs" "C:\Documents\Scripts\quack-run.bat"
