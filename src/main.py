@@ -11,7 +11,10 @@ def play_sound() -> None:
     pygame.mixer.music.play()
 
 
+quack_hotkey = 'F23'
+exit_hotkey = 'F24'
+
 if __name__ == '__main__':
-    keyboard.add_hotkey('ctrl+shift+alt+q', play_sound, suppress=True)
-    print("Press Ctrl+Shift+Alt+Q to play the sound.")
-    keyboard.wait('ctrl+shift+alt+w', suppress=True)
+    keyboard.add_hotkey('F23', play_sound, suppress=True)
+    print(f"Press {quack_hotkey} to play the sound.")
+    keyboard.wait(exit_hotkey, suppress=True)
